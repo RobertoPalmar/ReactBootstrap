@@ -1,0 +1,69 @@
+/////////////////////////CONFIGURACION GLOBAL/////////////////////////
+
+$spacer: 1rem;
+$enable-shadows: true; //HABILITA LAS SOBRAS EN COMPONENTES
+// $enable-rounded: false;             //HABILITA LOS BORDES
+$enable-gradients: true; //HABILITA DEGRADADO SUTIL EN COMPONENTES
+$enable-transitions: true; //HABILITA TRANSICIONES
+$enable-grid-classes: true; //HABILITA LA GENERACION DE CLASES CSS CON EL SISTEMA GRID
+$enable-button-pointers: true; //HABILITA EL POINTER SOBRE BOTONES
+
+///////////////////////CONFIGURACION DETALLADA///////////////////////
+
+//////COLORES//////
+
+$primary: #d63384; //COLOR PRIMARIO
+$secondary: #6a2cdd; //COLOR SECUNDARIO
+$info: #fdfcb0;     //COLOR TERCIARIO
+
+//////BOTONES//////
+
+$btn-padding-y: .5rem; //PADDING Y
+$btn-padding-x: 1rem; //PADDING X                 
+$btn-line-height: 1rem; //ALTURA DE BOTONES
+$btn-font-size: 1rem; //TAMAÑO DE LETRA
+$btn-border-width: .1rem; //GROSOR DE BORDES  
+$btn-border-radius: .5rem; //RADIO DE LOS BORDES
+
+/////////////////////////IMPORTAR BOOTSTRAP/////////////////////////
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+///////////////////////////MODIFICACIONES///////////////////////////
+
+button {
+  font-weight: bold !important;
+  border-bottom: .3rem solid rgba(0, 0, 0, 0.25) !important;
+}
+
+button:active {
+  border-bottom: .3rem solid rgba(0, 0, 0, 0) !important;
+  // margin-bottom: .3rem;
+  // transform: translateY(.3rem);
+}
+
+button:focus {
+  
+}
+
+.navbar {
+  padding-top: .3rem;
+  // height: 3.5rem;
+  border-bottom: .3rem solid rgba(0, 0, 0, 0.25) !important;
+
+  &-toggler{
+    margin: 0;
+    width: 3rem;
+    height: 2.5rem;
+    padding-top: 0rem;
+
+    &:focus{
+      box-shadow: none;
+    }
+    
+    &-icon{
+      font-size: 1rem;
+    }
+
+  }
+}
