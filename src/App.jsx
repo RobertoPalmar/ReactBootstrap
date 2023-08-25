@@ -20,6 +20,9 @@ function App() {
           <Navbar.Collapse>
             <Nav className="ms-auto" navbarScroll>
               <Nav.Link>Inicio</Nav.Link>
+              <NavDropdown title="Categoria">
+                <NavDropdown.Item className="bg-primary">SASS</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
